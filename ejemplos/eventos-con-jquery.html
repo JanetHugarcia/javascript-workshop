@@ -1,0 +1,31 @@
+<html lang="en">
+  <head>
+    <meta charset='utf-8'>
+    <title>Aquí va el título de la página</title>
+    <!-- Agregando la librería jQuery -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript">
+      //Aqui puedo usar el jQuery
+      //Evento 1: Cuando esta cargado todo el HTML -> el DOM estea listo a usar
+      $(document).ready(function(){
+        //Evento 2: Cuando el usuario dea click
+        $("#saluda").on("click", function(evt){
+          alert("Hola! siempre te saludaré cada vez que haces click a este elemento :)");
+          //Los links por naturaleza te envían a una direccion URL y con esta declaración
+          //lo evitamos
+          evt.prevenDefault();
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h1> Esto es un título de cabecera en el body <a id="saluda" href="javascript:;">Click aqui!</a>.</h1>
+    <p> Un párrafo que contiene un link
+      <a href="http://compartiendoconocimiento.com/">ver ahora</a>.</p>
+    <ul>
+      <li>Un elemento de la lista</li>
+      <li>otro elemento de la lista</li>
+      <li>tercer último elemento en la lista</li>
+    </ul>
+  </body>
+</html>

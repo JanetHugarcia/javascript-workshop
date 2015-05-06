@@ -1,0 +1,38 @@
+<html lang="en">
+  <head>
+    <meta charset='utf-8'>
+    <title>Aquí va el título de la página</title>
+    <script>
+        //definiendo una variable en el ámbito global
+        var variableGlobal = 99;
+
+        //crear una función es generar un nuevo ámbito
+        function saveUsuario(id, nombre){
+          //invocamos a este contexto con this
+          this.id = id;
+          this.nombre = nombre;
+        };
+
+        //Creamos una nueva instancia(objeto)
+        //de la funcion saveUsuario en objSaveUsuarioA
+        var objSaveUsuarioA = new saveUsuario(1, "Pepe");
+
+        //Creamos una nueva instancia(objeto)
+        //de la funcion saveUsuario en objSaveUsuarioB
+        var objSaveUsuarioB = new saveUsuario(2, "Josefa");
+
+        alert("El valor de objSaveUsuarioA.id es: " + objSaveUsuarioA.id);
+        alert("Y el valor de objSaveUsuarioA.nombre es: " + objSaveUsuarioA.nombre);
+
+    </script>
+  </head>
+  <body>
+    <h1>Esto es un título de cabecera que se verá en el body</h1>
+    <p>Un párrafo que contiene un link <a href="http://compartiendoconocimiento.com/">ver ahora</a>.</p>
+    <ul>
+      <li>Un elemento de la lista</li>
+      <li>otro elemento de la lista</li>
+      <li>tercer último elemento en la lista</li>
+    </ul>
+  </body>
+</html>
