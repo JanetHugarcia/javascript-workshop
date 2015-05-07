@@ -1,5 +1,5 @@
 # Actividad
-1. Se tiene un formulario que tenga los siguientes campos:
+Se tiene un formulario los siguientes campos:
 
    Nombre Producto (campo de texto, solo acepta strings)
    Categoría (campo de texto, solo acepta strings)
@@ -13,20 +13,17 @@
    Producto exclusivo (Botón que realizará un alert)
    Producto barato (Botón que realizará un alert)
 
-2. Se debe registrar un producto con una categoría y precio correspondiente,
+1. Se debe registrar un producto con una categoría y precio correspondiente,
    al dar click en el boton "Registrar" debe mostrarse en el textarea Registro
    con el siguiente formato:
 
    Producto: [nombre ] - Categoría: [nombre] - Precio: [total]
 
-3. Mostrar el nombre de la categoría registrada que tiene más productos cuando
-   se clickee en el botón "Categoría Top"
+2. Mostrar los nombre de las categorías registradas y la cantidad de sus productos registrados
+   se clickee en el botón "Total Categorías registradas"
 
-4. Mostrar el nombre de la categoría registrada que tiene menos productos cuando
-   se clickee en el botón "Categoría baja"
+3. Mostrar la cantidad total de los productos registrados
+   se clickee en el botón "Total Productos registrados"
 
-5. Mostrar el nombre y el precio del producto registrado que tiene mayor precio cuando
-   se clickee en el botón "Producto exclusivo"
-
-6. Mostrar el nombre y el precio del producto registrado que tiene menor precio cuando
-   se clickee en el botón "Producto barato"
+4. Mostrar los nombre de las categorías registradas y la cantidad de sus productos registrados
+   se clickee en el botón "La suma del precio de los Productos"

@@ -43,5 +43,5 @@ window.onload = function(){
     evt.preventDefault();
   };
 
-  document.forms[0].encuesta.addEventListener("click", mostrarEncuesta, false);
+  document.forms[0].encuesta.addEventListener("click", mostrarEncuesta);
 }
