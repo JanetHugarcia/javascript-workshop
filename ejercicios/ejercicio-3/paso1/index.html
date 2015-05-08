@@ -3,26 +3,36 @@
 <head>
   <title>Objetos y Arrays con instancias</title>
   <meta charset="utf-8">
+  <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-nr-min.css"/>
+  <link rel="stylesheet" href="../../../extras/css/style.css"/>
   <script type="text/javascript" src="ejercicio.js"></script>
 </head>
 <body>
-    <h1>Conociendo Colecciones y objetos literales.</h1>
-    <form>
-      <dl>
-        <dt>Nombre del producto:</dt>
-        <dd><input type="text" id="producto"></dd>
-        <dt>Nombre de la categoría:</dt>
-        <dd><input type="text" id="categoria"></dd>
-        <dt>Precio S./:</dt>
-        <dd><input type="text" id="precio"></dd>
-      </dl>
-      <button id="registrar">Registrar</button>
+    <form class="pure-form pure-form-aligned form-ejercicio3">
+      <h1>Conociendo Colecciones y objetos literales.</h1>
+      <fieldset>
+        <div class="pure-control-group">
+          <label for="producto">Nombre del producto:</label>
+          <input type="text" id="producto">
+        </div>
+        <div class="pure-control-group">
+          <label for="categoria">Nombre de la categoría:</label>
+          <input type="text" id="categoria">
+        </div>
+        <div class="pure-control-group">
+          <label for="categoria">Precio S./:</label>
+          <input type="text" id="precio">
+        </div>
+        <div class="pure-controls">
+          <button id="registrar" class="pure-button pure-button-primary">Registrar</button>
+        </div>
+      </fieldset>
       <hr>
       <textarea id="registroProducto" cols="70" rows="15"></textarea>
       <hr>
-      <button id="total_categorias">Categorías registradas</button>
-      <button id="total_productos">Productos Registrados</button>
-      <button id="suma_productos">La suma del precio de los Productos</button>
+      <button id="total_categorias" class="pure-button pure-button-primary">Categorías registradas</button>
+      <button id="total_productos" class="pure-button pure-button-primary">Productos Registrados</button>
+      <button id="suma_productos" class="pure-button pure-button-primary">La suma del precio de los Productos</button>
     </form>
 </body>
 </html>

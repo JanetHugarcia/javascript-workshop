@@ -1,0 +1,36 @@
+* {
+  font-family: Arial, "sans-serif";
+  color: #2a2503;
+}
+
+body {
+  background-color: #eee;
+}
+.form-ejercicio1,
+.form-ejercicio2,
+.form-ejercicio3 {
+  display:block;
+  margin: 0 auto;
+  width: 850px;
+  text-align: center;
+  position: relative;
+}
+
+.operador{
+  display:inline-block;
+  width: 20px;
+  vertical-align: middle;
+  font-size:23px;
+  font-weight:bold;
+}
+
+#resultado-suma,
+#resultado-resta,
+#resultado-multiplica,
+#resultado-divide{
+  position: absolute;
+  top: 33%;
+}
+#resultado-resta{top:51%;}
+#resultado-multiplica{top:69%;}
+#resultado-divide{top:86%;}
